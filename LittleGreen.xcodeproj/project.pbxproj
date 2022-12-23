@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		1243AD7D2952F00E00A3A6A9 /* LittleGreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1243AD7B2952F00E00A3A6A9 /* LittleGreen.xcdatamodeld */; };
 		1243AD7F2952F00F00A3A6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243AD7E2952F00F00A3A6A9 /* Assets.xcassets */; };
 		1243AD822952F00F00A3A6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1243AD802952F00F00A3A6A9 /* LaunchScreen.storyboard */; };
+		87BCCB2F8313DFCCA7D5F847 /* Pods_LittleGreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC70D8AF85EC4546202B2F /* Pods_LittleGreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1243AD7E2952F00F00A3A6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1243AD812952F00F00A3A6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1243AD832952F00F00A3A6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EC70D8AF85EC4546202B2F /* Pods_LittleGreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleGreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883A5B31F7A680A2D6A3032E /* Pods-LittleGreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleGreen.debug.xcconfig"; path = "Target Support Files/Pods-LittleGreen/Pods-LittleGreen.debug.xcconfig"; sourceTree = "<group>"; };
+		D8AF0EF3549A850BC22AE449 /* Pods-LittleGreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleGreen.release.xcconfig"; path = "Target Support Files/Pods-LittleGreen/Pods-LittleGreen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BCCB2F8313DFCCA7D5F847 /* Pods_LittleGreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1243AD712952F00E00A3A6A9 /* LittleGreen */,
 				1243AD702952F00E00A3A6A9 /* Products */,
+				1EB4A1F5C919F1AFA3A24775 /* Pods */,
+				31FC45A443BDD0410A1C64FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = LittleGreen;
 			sourceTree = "<group>";
 		};
+		1EB4A1F5C919F1AFA3A24775 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				883A5B31F7A680A2D6A3032E /* Pods-LittleGreen.debug.xcconfig */,
+				D8AF0EF3549A850BC22AE449 /* Pods-LittleGreen.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		31FC45A443BDD0410A1C64FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63EC70D8AF85EC4546202B2F /* Pods_LittleGreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1243AD862952F00F00A3A6A9 /* Build configuration list for PBXNativeTarget "LittleGreen" */;
 			buildPhases = (
+				13760C71AA8849E62D8C4183 /* [CP] Check Pods Manifest.lock */,
 				1243AD6B2952F00E00A3A6A9 /* Sources */,
 				1243AD6C2952F00E00A3A6A9 /* Frameworks */,
 				1243AD6D2952F00E00A3A6A9 /* Resources */,
+				F2B8FC89E8B73023F777C8AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +133,7 @@
 				};
 			};
 			buildConfigurationList = 1243AD6A2952F00E00A3A6A9 /* Build configuration list for PBXProject "LittleGreen" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13760C71AA8849E62D8C4183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittleGreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B8FC89E8B73023F777C8AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittleGreen/Pods-LittleGreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittleGreen/Pods-LittleGreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittleGreen/Pods-LittleGreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1243AD6B2952F00E00A3A6A9 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		1243AD872952F00F00A3A6A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A5B31F7A680A2D6A3032E /* Pods-LittleGreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,11 +364,13 @@
 				DEVELOPMENT_TEAM = UHD85B9V34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittleGreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小绿书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboar;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,14 +378,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaogua.LittleGreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1243AD882952F00F00A3A6A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8AF0EF3549A850BC22AE449 /* Pods-LittleGreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,11 +398,13 @@
 				DEVELOPMENT_TEAM = UHD85B9V34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittleGreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小绿书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboar;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +412,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaogua.LittleGreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
